@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/*////////////////////////////
+/////       RESET        /////
+////////////////////////////*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*////////////////////////////
+///   CUSTOM PROPERTIES    ///
+////////////////////////////*/
+
+:root {
+    --clr-primary: hsl(0, 0%, 95%);
+    --clr-secondary: hsla(0, 0%, 100%, 0.75);
+
+    --ff-primary: "Lexend Deca", sans-serif;
+    --ff-secondary: "Big Shoulders Display", cursive;
+
+    --bg-orange: hsl(31, 77%, 52%);
+    --bg-green: hsl(184, 100%, 22%);
+    --bg-grey: hsl(179, 100%, 13%);
+}
+
+/*////////////////////////////
+///    UTILITY CLASSES     ///
+////////////////////////////*/
+
+.flow-content > * + * {
+    margin-top: 1.75rem;
+}
+
+.item--orange {
+    background-color: var(--bg-orange);
+    --btn-clr: var(--bg-orange);
+}
+
+.item--green {
+    background-color: var(--bg-green);
+    --btn-clr: var(--bg-green);
+}
+
+.item--grey {
+    background-color: var(--bg-grey);
+    --btn-clr: var(--bg-grey);
+}
+
+/*////////////////////////////
+///     GENERAL STYLES     ///
+////////////////////////////*/
+
+body {
+    background-color: var(--clr-primary);
+    color: var(--clr-primary);
+    font-family: var(--ff-primary);
+    font-size: 0.9375rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1rem;
+}
+
+.hero__item {
+    padding: 2.8rem;
+    max-width: 20rem;
+}
+
+.btn {
+    border: 2px solid var(--clr-primary);
+    border-radius: 100vh;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75em 2em;
+    background-color: var(--clr-primary);
+    color: var(--btn-clr);
+}
+
+.btn:hover {
+    background: none;
+    color: var(--clr-primary);
+}
+
+@media (min-width: 60rem) {
+    .hero {
+        flex-direction: row;
+    }
+
+    .hero__item {
+        max-width: 18.75rem;
+    }
+
+    .btn {
+        margin-top: 4.5rem;
+    }
+}
+
+/*////////////////////////////
+///    SPECIFIC STYLES     ///
+////////////////////////////*/
+
+.item__title {
+    text-transform: uppercase;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+}
+
+.item__paragraph {
+    line-height: 1.75;
+    color: var(--clr-secondary);
+}

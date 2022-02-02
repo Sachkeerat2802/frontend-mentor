@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/*/////////////////////////////
+/////        RESET        /////
+/////////////////////////////*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    font-size: inherit;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*/////////////////////////////
+/////   GENERAL STYLES    /////
+/////////////////////////////*/
+
+body {
+    margin: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(229, 23%, 23%);
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 50vh, 45vw 55vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+/*/////////////////////////////
+////    SPECIFIC STYLES    ////
+/////////////////////////////*/
+
+.card {
+    background-color: white;
+    box-shadow: 0 0 1rem hsl(229, 23%, 23%, 0.5);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-inline: 1rem;
+}
+
+.card__images {
+    position: relative;
+}
+
+.card__profile {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+.card__details {
+    padding: 5rem 0 1.5rem 0;
+}
+
+.card__name--span {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin-left: 0.5rem;
+}
+
+.card__city {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.card__divider {
+    color: hsl(0, 0%, 59%);
+    opacity: 0.3;
+    margin: 0;
+}
+
+.card__stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.card__stat--span {
+    display: block;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
