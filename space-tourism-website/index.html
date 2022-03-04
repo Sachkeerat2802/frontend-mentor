@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Frontend Mentor | Space Tourism Website</title>
+    </head>
+    <body class="home">
+        <header class="primary-header flex">
+            <div>
+                <img src="assets/shared/logo.svg" alt="space tourism logo" class="logo" />
+            </div>
+            <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex uppercase ff-subhead fs-300 ls-2">
+                    <li class="active">
+                        <a href="index.html"><span aria-hidden="true">00</span>Home</a>
+                    </li>
+                    <li>
+                        <a href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+                    </li>
+                    <li>
+                        <a href="crew.html"><span aria-hidden="true">02</span>Crew</a>
+                    </li>
+                    <li>
+                        <a href="technology.html"><span aria-hidden="true">03</span>Technology</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container container--home">
+                <div class="home__content flow-content">
+                    <h1 class="ff-subhead fs-500 clr-accent ls-3 uppercase">So, you want to travel to <span class="home__title--span ff-head fs-900 clr-light">Space</span></h1>
+                    <p class="clr-accent">
+                        Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+                    </p>
+                </div>
+                <a href="#" class="home__btn primary-btn bg-light ff-head uppercase">Explore</a>
+            </div>
+        </main>
+    </body>
+</html>
