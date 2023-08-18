@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+        <script src="script.js" defer></script>
+        <title>Frontend Mentor | Tip calculator app</title>
+    </head>
+    <body>
+        <main>
+            <img src="/images/logo.svg" alt="logo" class="logo" />
+            <div class="calculator-app flex">
+                <div class="app__input flow-content">
+                    <div class="input__bill flow-content">
+                        <label class="input__title" for="bill">Bill</label>
+                        <div class="input__container input__container--bill">
+                            <input class="input__box input__bill-box" type="number" id="bill" placeholder="0" />
+                        </div>
+                    </div>
+                    <div class="input__tip flow-content">
+                        <h2 class="input__title">Select Tip %</h2>
+                        <div class="input__btns">
+                            <button class="btn bg-dark">5%</button>
+                            <button class="btn bg-dark">10%</button>
+                            <button class="btn btn-green">15%</button>
+                            <button class="btn bg-dark">25%</button>
+                            <button class="btn bg-dark">50%</button>
+                            <button class="input__custom btn">Custom</button>
+                        </div>
+                    </div>
+                    <div class="input__people flow-content">
+                        <label class="input__title" for="people">Number of People</label>
+                        <div class="input__container input__container--people">
+                            <input class="input__box input__people-box" type="number" id="people" placeholder="0" />
+                        </div>
+                    </div>
+                </div>
+                <div class="app__output flow-content bg-dark flex">
+                    <div class="flow-content">
+                        <div class="output__tip flex">
+                            <h2 class="output__title">Tip Amount<span> / person</span></h2>
+                            <p class="output__amount">$0.00</p>
+                        </div>
+                        <div class="output__total flex">
+                            <h2 class="output__title">Total<span> / person</span></h2>
+                            <p class="output__amount">$0.00</p>
+                        </div>
+                    </div>
+                    <button class="output__reset btn btn-green">Reset</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
